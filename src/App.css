@@ -12,9 +12,26 @@ html, body {
   user-select: none;
 }
 
+h1 {
+  color: black;
+  font-size: 25px;
+  font-family: Roboto, sans-serif;
+  text-align: center;
+  margin: 20px 0;
+}
+
 .todo-app {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+}
+
+.task-list-main {
+  width: 600px;
+  min-height: 500px;
+  background-color: gray;
+  padding: 25px;
+  margin: 10px;
+  border-radius: 26px;
 }
