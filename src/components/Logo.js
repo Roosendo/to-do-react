@@ -6,7 +6,8 @@ function Logo() {
     <div className='logo-container'>
       <img 
         src={Logofcc}
-        className='logo' />
+        className='logo'
+        alt='Logo' />
     </div>
   );
 }
