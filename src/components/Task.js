@@ -1,13 +1,16 @@
 import '../stylesheets/Task.css';
-import { AiOutlineCloseSquare } from "react-icons/ai";
+import { AiOutlineCloseSquare } from 'react-icons/ai';
 
-function Task({ text, done }) {
+function Task({ id, text, done, doTask, deleteTask }) {
   return (
     <div className={done ? 'task-container done' : 'task-container'}>
-      <div className='task-text'>
+      <div 
+        className='task-text'
+        onClick={() => doTask(id)}>
         {text}
       </div>
-      <div>
+      <div
+        onClick={() => deleteTask(id)}>
         <AiOutlineCloseSquare className='task-icon' />
       </div>
     </div>

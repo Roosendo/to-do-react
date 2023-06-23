@@ -1,6 +1,6 @@
 import './App.css';
 import Logo from './components/Logo';
-import Task from './components/Task';
+import TaskList from './components/TaskList';
 
 function App() {
   return (
@@ -8,8 +8,7 @@ function App() {
       <Logo />
       <div className='task-list-main'>
         <h1>My to-do's</h1>
-        <Task
-          text='Aprender React' />
+        <TaskList />
       </div>
     </div>
   );
